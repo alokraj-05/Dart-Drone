@@ -1,0 +1,120 @@
+.video-two {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+}
+.main-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.droneImg{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.content-2 {
+  padding-left: 5rem;
+  position: absolute;
+  bottom: 8%;
+  left: 3rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: calc(100% - 8rem);
+}
+
+
+
+.content-2 h1 {
+  font-family: "Syne";
+  font-size: 5rem;
+  color: #f5f3f4;
+  letter-spacing: 1px;
+  font-weight: 800;
+  width: 100%;
+  margin: 0;
+  letter-spacing: 10px;
+  transform-origin: left;
+}
+
+.left p {
+  font-family: "Syne";
+  font-size: 1.5rem;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+}
+
+.left h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+
+.right {
+  position: relative;
+  width: 100%;
+}
+
+.right p {
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  font-family: "Syne";
+  right: 0;
+  padding-right: 5rem;
+  width: 30%;
+}
+
+.create {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-color2);
+}
+
+@media (max-width:1025px) {
+  .content-2 h1 {
+    font-size: 4rem;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+@media (max-width:769px) {
+  .content-2 {
+    left: 0;
+  }
+
+  .content-2 h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:426px) {
+  .content-2 {
+    left: -50px;
+  }
+
+  .content-2 h1 {
+    font-size: 1.1rem;
+    transform: scaleY(1.2);
+  }
+
+  .content-2 p {
+    font-size: 1rem;
+  }
+}

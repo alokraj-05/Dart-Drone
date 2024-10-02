@@ -1,0 +1,236 @@
+.about-us{
+  color: var(--white)
+}
+.about-us-heading {
+  margin: 4rem 0;
+  text-align: center;
+  font-family: 'Syne';
+  position: relative;
+}
+
+.about-us-heading::after {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background: radial-gradient(260deg, #6700d5 20%, #ba0038 100%);
+  left: 10%;
+  bottom: 10%;
+  /* z-index: 112; */
+}
+
+.about-us-heading h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-us-heading p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+.about-us-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 7rem;
+  gap: 10px;
+}
+.about-us-cards2 {
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-left:5rem;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.about-us-cards-info {
+  margin: 1rem;
+  font-family: 'Syne';
+  border-radius: 18px;
+  transition: all .3s ease-in-out;
+  padding:1rem;
+  backdrop-filter:blur(35px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.circles::before{
+  position: absolute;
+  content: '';
+  width:20rem;
+  height:20rem;
+  border-radius:50%;
+  background: linear-gradient(90deg,var(--purple),var(--blue-mix));
+  transform: translate(16rem,-3rem)
+}
+.circles1::before{
+  position: absolute;
+  content: '';
+  width:15rem;
+  height:15rem;
+  border-radius:50%;
+  background: linear-gradient(90deg,var(--dark-blue),var(--blue-mix));
+  transform: translate(20rem,2rem)
+}
+
+
+.about-us-cards-info:hover {
+  color: #fdfdfd;
+  transform: scale(1.05);
+}
+
+.auci-img {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 18px;
+}
+
+.auci-img img {
+  width: 100%;
+  border-radius: inherit;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.about-us-cards-info p {
+  padding: 0 0 .5rem 10px;
+}
+
+.cc-position{
+  position: relative;
+  overflow: hidden;
+}
+
+.compound-card-circle::before{
+  position: absolute;
+  content: "";
+  width:25rem;
+  height:25rem;
+  background: linear-gradient(45deg, var(--purple),var(--dark-blue));
+  border-radius:50%;
+  left:20rem;
+  top:4rem;
+}
+.compound-card-circle::after{
+  position: absolute;
+  content: "";
+  width:10rem;
+  height:10rem;
+  background: linear-gradient(45deg, var(--red),var(--purple  ));
+  border-radius:50%;
+  left:3rem;
+  bottom:5rem;
+  z-index:-1;
+}
+
+.compound-card{
+  margin:3rem;
+  background-color:rgba(0,0,0,0.5);
+  backdrop-filter:blur(40px);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius:20px;
+  font-family:'Syne';
+  border: 1px solid var(--white);
+  overflow: hidden;
+}
+.cc-heading{
+  font-weight:bold;
+  font-size:2rem;
+  margin:1.5rem 0;
+}
+.cc-component{
+  display:flex;
+  width:100%;
+  height:60vh;
+  overflow:hidden;
+  box-sizing: border-box;
+}
+.cc-comp-text{
+  padding:0 1rem 0 2rem;
+  font-size:1.5rem;
+  text-align:start;
+  display:flex;
+  align-items:center;ms:center;
+}
+.cc-comp-img{
+  width:50rem;
+  height:100%
+  overflow:hidden;
+  border-radius:20px;
+}
+.cc-comp-img img{
+  border-radius:20px;
+}
+
+@media (max-width:1025px) {
+  .about-us-cards {
+    grid-template-columns: 1fr;
+    margin: 0 3rem;
+  }
+
+  .text-container {
+    font-size: 3rem;
+    margin: 0 5rem;
+  }
+
+  .text-container span {
+    font-size: 3.3rem;
+  }
+}
+
+@media(max-width:769px) {
+  .about-us-cards {
+    margin: 0;
+  }
+}
+
+@media (max-width:426px) {
+  .about-us-heading h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-heading p {
+    font-size: 1rem;
+    letter-spacing: 9px;
+  }
+
+  .about-us-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-cards-info {
+    margin: 0;
+    position: relative;
+  }
+
+  .auci-img {
+    padding: 10px;
+  }
+
+  .text-container {
+    font-size: 1.6rem;
+    margin: 0 2rem;
+  }
+
+  .text-container span {
+    font-size: 2rem;
+  }
+
+  .aboutus-down {
+    margin: 2rem 1rem;
+  }
+
+  .aboutus-down h2 {
+    font-size: 2rem;
+  }
+
+  .aboutus-down p {
+    font-size: 1rem;
+  }
+}

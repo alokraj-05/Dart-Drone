@@ -1,0 +1,31 @@
+.flex {
+  display: flex;
+}
+
+.y-center {
+  align-items: center;
+}
+
+.x-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.red {
+  color: #ba181b;
+}
+
+.black {
+  color: #03071e;
+}
+
+.white {
+  color: #f5f3f4;
+}
+
+.border {
+  border: 2px solid #0d0d0d;
+}

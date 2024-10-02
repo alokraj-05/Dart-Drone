@@ -1,0 +1,84 @@
+:root {
+  --dark-blue: #003049;
+  --purple: rgb(71, 8, 126);
+  --light-blue: #669bbc;
+  --black: #03071e;
+  --matt-black: #0f0f0fee;
+  --white: #f5f3f4;
+  --red: #ba181b;
+  --grey: #adb5bd;
+  --blue-mix: #14213d;
+  --yellow: #ffb703;
+  --green: #0e9c0e;
+  --background-color: #f0f6fc;
+  --background-color2: #0e0e0e;
+  --background-color3: #ade8f4;
+  --font-heading: "heading";
+  --font-heading-italic: "heading-italic";
+  --font-heading-light: "heading-light";
+  --font-bebas: "bebas";
+  --light-dark:#111111;
+  --blue:#0096c7;
+  --pink:#ff8fab;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--matt-black);
+  border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.y-center {
+  align-items: center;
+}
+
+.x-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.red {
+  color: #ba181b;
+}
+
+.black {
+  color: #03071e;
+}
+
+.white {
+  color: #f5f3f4;
+}
+
+.border {
+  border: 2px solid #0d0d0d;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  background-color: var(--light-dark);
+  color:var(--white)
+}
